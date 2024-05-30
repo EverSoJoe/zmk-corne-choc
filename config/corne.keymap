@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &led_strip {
-        chain-length = <21>;
+        chain-length = <27>;
 };
 
 / {
@@ -24,7 +24,7 @@
             bindings = <
 &rgb_ug RGB_EFF  &trans  &kp LS(DQT)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(EQUAL)    &kp FSLH  &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
 &rgb_ug RGB_HUI  &trans  &kp LS(SQT)  &kp LA(N8)    &kp LA(N9)    &kp LS(QMARK)    &kp STAR  &kp N4  &kp N5  &kp N6  &kp PLUS   &trans
-&rgb_ug RGB_HUD  &trans  &kp LT       &kp LA(N7)    &kp LA(N0)    &kp LS(EXCL)     &trans    &kp N1  &kp N2  &kp N3  &kp DEL    &trans
+&rgb_ug RGB_BRI  &trans  &kp LT       &kp LA(N7)    &kp LA(N0)    &kp LS(EXCL)     &trans    &kp N1  &kp N2  &kp N3  &kp DEL    &trans
                                       &trans        &kp LCTRL     &trans           &trans    &trans  &trans
             >;
         };
