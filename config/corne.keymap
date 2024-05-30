@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#include "keys_de.h"
+
 &led_strip {
         chain-length = <27>;
 };
@@ -13,10 +15,10 @@
 
         layer_0 {
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E      &kp R      &kp T        &kp Z      &kp U  &kp I      &kp O     &kp P     &kp LBKT
-&trans   &kp A  &kp S  &kp D      &kp F      &kp G        &kp H      &kp K  &kp L      &kp SEMI  &kp APOS  &kp MINUS
-&trans   &kp Y  &kp X  &kp C      &kp V      &kp B        &kp N      &kp M  &kp COMMA  &kp DOT   &kp FSLH  &trans
-                       &sk LSHFT  &kp LCTRL  &kp SPACE    &kp ENTER  &mo 1  &kp BSPC
+&kp ESC  &kp DE_Q  &kp DE_W  &kp DE_E   &kp DE_R   &kp DE_T     &kp DE_Z   &kp DE_U  &kp DE_I      &kp DE_O       &kp DE_P         &kp DE_U_UMLAUT
+&trans   &kp DE_A  &kp DE_S  &kp DE_D   &kp DE_F   &kp DE_G     &kp DE_H   &kp DE_J  &kp DE_K      &kp DE_L       &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&trans   &kp DE_Y  &kp DE_X  &kp DE_C   &kp DE_V   &kp DE_B     &kp DE_N   &kp DE_M  &kp DE_COMMA  &kp DE_PERIOD  &kp DE_MINUS     &kp DE_SZ
+                             &sk LSHFT  &kp LCTRL  &kp SPACE    &kp ENTER  &mo 1     &kp BSPC
             >;
         };
 
