@@ -67,6 +67,8 @@
 &sk LEFT_CONTROL  &kp DE_Y              &kp DE_X                &kp DE_C            &kp DE_V            &kp DE_B     &kp DE_N       &kp DE_M             &kp DE_COMMA         &kp DE_PERIOD            &kp DE_MINUS                  &mm_sharp_s
                                                                 &kp LGUI            &mo 1               &kp SPACE    &kp BACKSPACE  &mo 2                &kp ENTER
             >;
+
+            label = "BASE";
         };
 
         sym_num {
@@ -76,6 +78,8 @@
 &trans      &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_QUESTION        &kp KP_DOT       &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &none
                                                                &trans               &trans                &trans                 &kp DELETE       &trans     &kp KP_N0
             >;
+
+            label = "SYM1";
         };
 
         sym2_move {
@@ -85,6 +89,8 @@
 &trans  &kp DE_PIPE  &none            &none         &kp DE_BACKSLASH  &kp DE_TILDE    &none     &kp PAGE_DOWN  &kp END   &none      &none  &none
                                       &trans        &trans            &trans          &trans    &trans         &trans
             >;
+
+            label = "SYM2";
         };
 
         control {
@@ -94,6 +100,8 @@
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &none  &kp C_BRIGHTNESS_DEC  &none             &kp C_BRIGHTNESS_INC  &none  &none
                                                      &none            &trans           &none              &to 4  &trans                &none
             >;
+
+            label = "CONTROL";
         };
 
         gaming {
@@ -103,6 +111,8 @@
 &kp DE_G  &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &kp C_BRIGHTNESS_DEC  &none             &kp C_BRIGHTNESS_INC  &none  &none
                                &none     &kp LALT  &kp SPACE    &to 0  &none                 &none
             >;
+
+            label = "GAME";
         };
     };
 
