@@ -79,7 +79,7 @@
 &trans  &kp DE_AT    &kp DE_DEGREE    &kp DE_EURO   &kp DE_EQUAL      &kp DE_GRAVE    &none     &kp PAGE_UP    &kp HOME  &none      &none  &none
 &trans  &kp DE_HASH  &kp DE_ASTERISK  &kp DE_CARET  &kp DE_SLASH      &kp DE_ACUTE    &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT  &none  &none
 &trans  &kp DE_PIPE  &none            &none         &kp DE_BACKSLASH  &kp DE_TILDE    &none     &kp PAGE_DOWN  &kp END   &none      &none  &none
-                                      &trans        &trans            &trans          &none     &trans         &trans
+                                      &trans        &trans            &trans          &trans    &trans         &trans
             >;
         };
 
