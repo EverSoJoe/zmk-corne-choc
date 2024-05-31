@@ -94,10 +94,10 @@
 
         gaming {
             bindings = <
-&none  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_R  &kp DE_T     &none  &none  &none  &none  &none  &none
-&none  &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F     &none  &none  &none  &none  &none  &none
-&none  &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &none  &none  &none  &none  &none
-                            &none     &kp LALT  &kp SPACE    &to 0  &none  &none
+&kp ESC  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R     &none  &none  &none  &none  &none  &none
+&none    &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F     &none  &none  &none  &none  &none  &none
+&none    &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &none  &none  &none  &none  &none
+                              &none     &kp LALT  &kp SPACE    &to 0  &none  &none
             >;
         };
     };
