@@ -98,10 +98,10 @@
 
         gaming {
             bindings = <
-&kp ESC  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R     &none  &kp C_PREVIOUS        &kp C_PLAY_PAUSE  &kp C_NEXT            &none  &none
-&none    &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F     &none  &kp C_VOL_DN          &kp C_MUTE        &kp C_VOL_UP          &none  &none
-&none    &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &kp C_BRIGHTNESS_DEC  &none             &kp C_BRIGHTNESS_INC  &none  &none
-                              &none     &kp LALT  &kp SPACE    &to 0  &none                 &none
+&kp ESC   &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R     &none  &kp C_PREVIOUS        &kp C_PLAY_PAUSE  &kp C_NEXT            &none  &none
+&kp DE_T  &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F     &none  &kp C_VOL_DN          &kp C_MUTE        &kp C_VOL_UP          &none  &none
+&kp DE_G  &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &kp C_BRIGHTNESS_DEC  &none             &kp C_BRIGHTNESS_INC  &none  &none
+                               &none     &kp LALT  &kp SPACE    &to 0  &none                 &none
             >;
         };
     };
