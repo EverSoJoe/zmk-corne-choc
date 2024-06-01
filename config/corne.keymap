@@ -73,35 +73,24 @@
 
         symbols {
             bindings = <
-&kp ESCAPE  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_SINGLE_QUOTE    &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
-&trans      &kp DE_EXCLAMATION       &kp DE_DOUBLE_QUOTES      &kp DE_DOLLAR        &kp DE_PERCENT        &kp DE_AMPERSAND       &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &none
-&trans      &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_QUESTION        &kp KP_DOT       &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &none
-                                                               &trans               &trans                &trans                 &kp DELETE       &trans     &kp KP_N0
+&kp ESCAPE  &kp DE_EXCL       &kp DE_DOUBLE_QUOTES  &kp DE_DOLLAR  &kp DE_PERCENT       &kp DE_AMPERSAND    &kp DE_SLASH       &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_EQUAL        &kp DE_QUESTION   &kp DE_PLUS
+&trans      &kp DE_N1         &kp DE_N2             &kp DE_N3      &kp DE_N4            &kp DE_N5           &kp DE_N6          &kp DE_N7                &kp DE_N8                 &kp DE_N9           &kp DE_N0         &kp DE_HASH
+&trans      &kp DE_LESS_THAN  &kp DE_GREATER_THAN   &kp DE_PIPE    &kp DE_GREATER_THAN  &kp DE_QUESTION     &kp DE_LEFT_BRACE  &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_RIGHT_BRACE  &kp DE_BACKSLASH  &none
+                                                    &trans         &trans               &trans              &kp DELETE         &trans                   &trans
             >;
 
             label = "SYMBOLS";
         };
 
-        numbers {
-            bindings = <
-&kp ESCAPE  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_LEFT_BRACKET  &kp DE_RIGHT_BRACKET  &kp DE_SINGLE_QUOTE    &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
-&trans      &kp DE_EXCLAMATION       &kp DE_DOUBLE_QUOTES      &kp DE_DOLLAR        &kp DE_PERCENT        &kp DE_AMPERSAND       &kp KP_ASTERISK  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &none
-&trans      &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_LESS_THAN     &kp DE_GREATER_THAN   &kp DE_QUESTION        &kp KP_DOT       &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &none
-                                                               &trans               &trans                &trans                 &kp DELETE       &trans     &kp KP_N0
-            >;
-
-            label = "NUMBERS";
-        };
-
         move {
             bindings = <
-&trans  &kp DE_AT    &kp DE_DEGREE    &kp DE_EURO   &kp DE_EQUAL      &kp DE_GRAVE    &none     &kp PAGE_UP    &kp HOME  &none      &none  &none
-&trans  &kp DE_HASH  &kp DE_ASTERISK  &kp DE_CARET  &kp DE_SLASH      &kp DE_ACUTE    &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT  &none  &none
-&trans  &kp DE_PIPE  &none            &none         &kp DE_BACKSLASH  &kp DE_TILDE    &none     &kp PAGE_DOWN  &kp END   &none      &none  &none
-                                      &trans        &trans            &trans          &trans    &trans         &trans
+&trans  &none  &none  &none   &none   &none     &none     &kp PAGE_UP    &kp HOME  &none      &kp DE_ASTERISK      &kp DE_TILDE
+&trans  &none  &none  &none   &none   &none     &kp LEFT  &kp UP         &kp DOWN  &kp RIGHT  &kp DE_SINGLE_QUOTE  &kp DE_GRAVE
+&trans  &none  &none  &none   &none   &none     &none     &kp PAGE_DOWN  &kp END   &none      &none                &none
+                      &trans  &trans  &trans    &trans    &trans         &trans
             >;
 
-            label = "move";
+            label = "MOVE";
         };
 
         control {
@@ -109,7 +98,7 @@
 &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI    &none  &kp C_PREVIOUS        &kp C_PLAY_PAUSE  &kp C_NEXT            &none  &none
 &ext_power EP_TOG  &out OUT_TOG     &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD    &none  &kp C_VOL_DN          &kp C_MUTE        &kp C_VOL_UP          &none  &none
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &none  &kp C_BRIGHTNESS_DEC  &none             &kp C_BRIGHTNESS_INC  &none  &none
-                                                     &none            &trans           &none              &to 4  &trans                &none
+                                                     &none            &trans           &none              &to 3  &trans                &none
             >;
 
             label = "CONTROL";
