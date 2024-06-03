@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MO2_TO5";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 5>;
+            bindings = <&mo 2>, <&to 5>;
 
             tapping-term-ms = <280>;
         };
@@ -118,7 +118,7 @@
 &kp ESC   &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R     &none  &none  &none  &none  &none  &none
 &kp DE_T  &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F     &none  &none  &none  &none  &none  &none
 &kp DE_G  &kp LCTRL  &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V     &none  &none  &none  &none  &none  &none
-                               &none     &kp LALT  &kp SPACE    &to 0  &none  &none
+                               &none     &kp LALT  &kp SPACE    &to 0  &to 6  &none
             >;
 
             label = "GAME";
@@ -133,6 +133,15 @@
             >;
 
             label = "NUMBERS";
+        };
+
+        type {
+            bindings = <
+&kp TAB  &kp Q  &kp W  &kp E    &kp R     &kp T        &kp Z    &kp U   &kp I      &kp O    &kp P            &kp DE_U_UMLAUT
+&trans   &kp A  &kp S  &kp D    &kp F     &kp G        &kp H    &kp J   &kp K      &kp L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&trans   &kp Y  &kp X  &kp C    &kp V     &kp B        &kp N    &kp M   &kp COMMA  &kp DOT  &kp MINUS        &mm_sharp_s
+                       &kp ESC  &kp LALT  &kp SPACE    &kp RET  &trans  &kp BSPC
+            >;
         };
     };
 
