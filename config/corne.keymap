@@ -37,7 +37,6 @@
             quick-tap-ms = <210>;
             flavor = "balanced";
             hold-trigger-on-release;
-            require-prior-idle-ms = <100>;
         };
 
         hmr: homerow_mods_right {
@@ -51,7 +50,6 @@
             quick-tap-ms = <210>;
             flavor = "balanced";
             hold-trigger-on-release;
-            require-prior-idle-ms = <100>;
         };
 
         td_mo2_to5: td_mo2_to5 {
