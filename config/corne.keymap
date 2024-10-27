@@ -69,6 +69,17 @@
 
             tapping-term-ms = <280>;
         };
+
+        ht_shift_capsword: ht_shift_capsword {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT_SHIFT_CAPSWORD";
+            bindings = <&kp>, <&td_shift_caps>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
+        };
     };
 
     combos {
@@ -85,10 +96,10 @@
 
         base {
             bindings = <
-&kp TAB           &kp DE_Q        &kp DE_W            &kp DE_E                &kp DE_R              &kp DE_T     &kp DE_Z   &kp DE_U               &kp DE_I                 &kp DE_O             &kp DE_P               &kp DE_U_UMLAUT
-&td_shift_caps    &hml LGUI DE_A  &hml LEFT_ALT DE_S  &hml LEFT_CONTROL DE_D  &hml LEFT_SHIFT DE_F  &kp DE_G     &kp DE_H   &hmr RIGHT_SHIFT DE_J  &hmr RIGHT_CONTROL DE_K  &hmr RIGHT_ALT DE_L  &hmr RGUI DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_CONTROL  &kp DE_Y        &kp DE_X            &kp DE_C                &kp DE_V              &kp DE_B     &kp DE_N   &kp DE_M               &kp DE_COMMA             &kp DE_PERIOD        &kp DE_MINUS           &mm_sharp_s
-                                                      &td_win_alt             &mo 1                 &kp SPACE    &kp ENTER  &mo 2                  &kp BACKSPACE
+&kp TAB                          &kp DE_Q        &kp DE_W            &kp DE_E                &kp DE_R              &kp DE_T     &kp DE_Z   &kp DE_U               &kp DE_I                 &kp DE_O             &kp DE_P               &kp DE_U_UMLAUT
+&ht_shift_capsword LEFT_SHIFT 0  &hml LGUI DE_A  &hml LEFT_ALT DE_S  &hml LEFT_CONTROL DE_D  &hml LEFT_SHIFT DE_F  &kp DE_G     &kp DE_H   &hmr RIGHT_SHIFT DE_J  &hmr RIGHT_CONTROL DE_K  &hmr RIGHT_ALT DE_L  &hmr RGUI DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LEFT_CONTROL                 &kp DE_Y        &kp DE_X            &kp DE_C                &kp DE_V              &kp DE_B     &kp DE_N   &kp DE_M               &kp DE_COMMA             &kp DE_PERIOD        &kp DE_MINUS           &mm_sharp_s
+                                                                     &td_win_alt             &mo 1                 &kp SPACE    &kp ENTER  &mo 2                  &kp BACKSPACE
             >;
 
             label = "BASE";
