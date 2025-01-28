@@ -89,6 +89,11 @@
             bindings = <&mo 5>;
             key-positions = <37 38>;
         };
+
+        alt+ctrl {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <36 37>;
+        };
     };
 
     keymap {
